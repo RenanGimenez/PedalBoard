@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="636.0" prefWidth="924.0" stylesheets="@stylesheet.css" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
+   <children>
+      <Rectangle fill="#f0f4f8" height="453.0" layoutX="140.0" layoutY="88.0" stroke="BLACK" strokeType="INSIDE" styleClass="pedal" width="693.0" />
+      <Line endX="521.0" endY="34.0" layoutX="312.0" layoutY="395.0" startX="-172.0" startY="34.0" />
+      <Text layoutX="194.0" layoutY="395.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mode" textAlignment="CENTER" wrappingWidth="88.13671875">
+         <font>
+            <Font name="Arial" size="24.0" />
+         </font>
+      </Text>
+      <Text layoutX="373.0" layoutY="368.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Preset" textAlignment="CENTER" wrappingWidth="88.13671875">
+         <font>
+            <Font name="Arial" size="24.0" />
+         </font>
+      </Text>
+      <Text layoutX="373.0" layoutY="395.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Note" textAlignment="CENTER" wrappingWidth="88.13671875">
+         <font>
+            <Font name="Arial" size="24.0" />
+         </font>
+      </Text>
+      <Text layoutX="632.0" layoutY="368.0" strokeType="OUTSIDE" strokeWidth="0.0" text="List" textAlignment="CENTER" wrappingWidth="88.13671875">
+         <font>
+            <Font name="Arial" size="24.0" />
+         </font>
+      </Text>
+      <Text layoutX="632.0" layoutY="395.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Octave" textAlignment="CENTER" wrappingWidth="88.13671875">
+         <font>
+            <Font name="Arial" size="24.0" />
+         </font>
+      </Text>
+      <Text layoutX="463.0" layoutY="392.0" strokeType="OUTSIDE" strokeWidth="0.0" text="+" textAlignment="CENTER" wrappingWidth="48.0">
+         <font>
+            <Font name="Arial" size="36.0" />
+         </font>
+      </Text>
+      <Text layoutX="712.0" layoutY="385.0" strokeType="OUTSIDE" strokeWidth="0.0" text="+" textAlignment="CENTER" wrappingWidth="48.0">
+         <font>
+            <Font name="Arial" size="36.0" />
+         </font>
+      </Text>
+      <Text layoutX="334.0" layoutY="392.0" strokeType="OUTSIDE" strokeWidth="0.0" text="-" textAlignment="CENTER" wrappingWidth="48.0">
+         <font>
+            <Font name="Arial" size="36.0" />
+         </font>
+      </Text>
+      <Text layoutX="595.0" layoutY="385.0" strokeType="OUTSIDE" strokeWidth="0.0" text="-" textAlignment="CENTER" wrappingWidth="48.0">
+         <font>
+            <Font name="Arial" size="36.0" />
+         </font>
+      </Text>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="76.0" layoutX="209.0" layoutY="276.0" stroke="BLACK" strokeType="INSIDE" width="58.0" />
+      <Text id="mode-text" fx:id="modeLCD" fill="RED" fontSmoothingType="LCD" layoutX="209.0" layoutY="339.0" stroke="#deefff" strokeType="OUTSIDE" strokeWidth="0.0" text="1" textAlignment="RIGHT" wrappingWidth="48.0">
+         <font>
+            <Font name="DS-Digital Bold" size="76.0" />
+         </font>
+      </Text>
+      <TextArea fx:id="arduinoLCD" layoutX="303.0" layoutY="120.0" prefHeight="132.0" prefWidth="367.0" style="-fx-border-color: black; -fx-border-width: 5;" stylesheets="@stylesheet.css" text="     Pedalboard&#10;      simulator&#10;&#10;&#10;">
+         <font>
+            <Font name="Electronic Highway Sign" size="27.0" />
+         </font>
+      </TextArea>
+      <Button fx:id="ModeBtn" layoutX="214.0" layoutY="469.0" mnemonicParsing="false" onAction="#setMode" prefHeight="48.0" prefWidth="48.0" styleClass="pedal" />
+      <Button fx:id="PresetNoteMinusBtn" layoutX="334.0" layoutY="469.0" mnemonicParsing="false" onAction="#setPresetNoteMinus" prefHeight="48.0" prefWidth="48.0" styleClass="pedal" />
+      <Button fx:id="PresetNotePlusBtn" layoutX="463.0" layoutY="469.0" mnemonicParsing="false" onAction="#setPresetNotePlus" prefHeight="48.0" prefWidth="48.0" styleClass="pedal" />
+      <Button fx:id="ListOctaveMinusBtn" layoutX="595.0" layoutY="469.0" mnemonicParsing="false" onAction="#setListOctaveMinus" prefHeight="48.0" prefWidth="48.0" styleClass="pedal" />
+      <Button fx:id="ListOctavePlusBtn" layoutX="712.0" layoutY="469.0" mnemonicParsing="false" onAction="#setListOctavePlus" prefHeight="48.0" prefWidth="48.0" styleClass="pedal" />
+   </children>
+</AnchorPane>

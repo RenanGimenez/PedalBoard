@@ -1,0 +1,22 @@
+.text-area {
+    text-area-background: rgb(7, 114, 201) ;
+}
+
+.text-area .content {
+    -fx-background-color: text-area-background ;
+}
+
+.text-area > .scroll-pane{
+
+    -fx-vbar-policy: never; 
+    -fx-hbar-policy: never; 
+}
+
+.pedal{
+    -fx-background-radius: 100;
+    -fx-border-radius: 100;
+    -fx-background-color: #c9e5ff;
+    -fx-border-color: black;
+    -fx-border-width: 1;
+
+}
